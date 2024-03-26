@@ -1,0 +1,4 @@
+  server_name: "dokuwiki"
+  fqdn: "{{ server_name }}.test"
+  server_root: "/var/www/html/{{ server_name }}"
+

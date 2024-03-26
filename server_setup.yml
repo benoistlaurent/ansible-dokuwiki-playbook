@@ -1,0 +1,26 @@
+---
+- hosts: all
+
+  vars_files:
+    - vars/main.yml
+  
+  roles:
+    - role: geerlingguy.apache
+      vars:
+        apache_vhosts:
+          - servername: "{{ fqdn }}"
+            documentroot: "{{ server_root }}"
+
+    - role: ansible-role-dokuwiki
+      vars:
+        dokuwiki_server_name: "{{ server_name }}"
+        dokuwiki_install_dir: "{{ server_root }}"
+
+  tasks:
+    - name: Properly setup firewall
+      firewalld:
+        service: http
+        permanent: yes
+        state: enabled
+        immediate: yes
+      when: ansible_os_family == "RedHat"

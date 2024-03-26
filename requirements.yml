@@ -1,0 +1,9 @@
+---
+roles:
+  - name: geerlingguy.apache
+    src: https://github.com/geerlingguy/ansible-role-apache
+    version: 4.0.0
+
+  - src: git+file:///Volumes/Projects/Development/ansible/ansible-role-dokuwiki
+
+
