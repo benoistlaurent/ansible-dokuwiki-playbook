@@ -5,5 +5,3 @@ roles:
     version: 4.0.0
 
   - src: git+file:///Volumes/Projects/Development/ansible/ansible-role-dokuwiki
-
-
