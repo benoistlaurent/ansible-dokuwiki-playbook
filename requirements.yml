@@ -4,4 +4,6 @@ roles:
     src: https://github.com/geerlingguy/ansible-role-apache
     version: 4.0.0
 
-  - src: git+file:///Volumes/Projects/Development/ansible/ansible-role-dokuwiki
+  - src: https://github.com/benoistlaurent/ansible-role-dokuwiki.git
+    version: 1.0.0
+
