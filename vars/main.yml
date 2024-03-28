@@ -1,7 +1,11 @@
 ---
 dokuwiki_title: "Coucou"
-# dokuwiki_users_vault: "users.yml"
+dokuwiki_users_vault: "users.yml"
+dokuwiki_plugins:
+  - name: "note"
+    src: "https://github.com/lpaulsen93/dokuwiki_note/archive/refs/tags/2020-06-28.tar.gz"
 
 server_name: "dokuwiki"
 fqdn: "{{ server_name }}.test"
 server_root: "/var/www/html/{{ server_name }}"
+

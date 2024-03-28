@@ -7,7 +7,7 @@ vm_setup:
 	vagrant up
 
 install_dokuwiki:
-	ansible-playbook -b server_setup.yml
+	ansible-playbook -b -J server_setup.yml
 
 purge:
 	vagrant destroy -f
