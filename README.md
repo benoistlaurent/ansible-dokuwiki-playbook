@@ -1,6 +1,9 @@
+# Ansible Playbook for DokuWiki
+
+Installs a instance of DokuWiki on a server.
 
 
-# Note Plugin
+## Note Plugin
 
 The plugin "note" has to be manually disabled then enabled again to make it work.
 
